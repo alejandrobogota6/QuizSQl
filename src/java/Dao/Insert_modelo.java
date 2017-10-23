@@ -21,9 +21,9 @@ import java.util.List;
 
 /**
  *
- * @author JCBOT
+ * @author Bogotá
  */
-public class Crud_modelo {
+public class Insert_modelo {
 
     public List<Modelo1> findAll() throws SQLException {
         List<Modelo1> departamentos = null;
@@ -78,40 +78,6 @@ public class Crud_modelo {
         return result;
     }
 
-//    public boolean update(Tabla t) throws SQLException {
-//        boolean result = false;
-//        Connection connection = Conexion.getConnection();
-//        String query = "update tablee set NameTable = ? where IdTable = ?";
-//        PreparedStatement preparedStmt = null;
-//        try {
-//            preparedStmt = connection.prepareStatement(query);
-//            preparedStmt.setString(1, t.getNameTabla());
-//            preparedStmt.setInt(2, t.getIdTabla());
-//            if (preparedStmt.executeUpdate() > 0) {
-//                result = true;
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
-//
-//    public boolean delete(Tabla t) throws SQLException {
-//        boolean result = false;
-//        Connection connection = Conexion.getConnection();
-//        String query = "delete from tablee where IdTable = ?";
-//        PreparedStatement preparedStmt = null;
-//        try {
-//            preparedStmt = connection.prepareStatement(query);
-//            preparedStmt.setInt(1, t.getIdTabla());
-//            result = preparedStmt.execute();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
+
 
 }

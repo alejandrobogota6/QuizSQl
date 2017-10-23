@@ -3,9 +3,9 @@
 <%@page import="Vo.Contexto1"%>
 <%@page import="Vo.Modelo1"%>
 <%@page import="Dao.Conexion"%>
-<%@page import="Dao.Crud_unidad"%>
-<%@page import="Dao.Crud_contexto"%>
-<%@page import="Dao.Crud_modelo"%>
+<%@page import="Dao.Insert_unidad"%>
+<%@page import="Dao.Insert_contexto"%>
+<%@page import="Dao.Insert_modelo"%>
 <%@page import="Vo.Tabla"%>
 <%@page import="java.util.List"%>
 <!DOCTYPE html>
@@ -20,12 +20,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body bgcolor="#ffffff" background="fondo.jpg">
+  
 
     <center>
         <p>&nbsp;</p>
         <h1>Lista</h1>
-        <img src="logo.PNG" border="4"  width="300" height="260"/>  
+        
 
 
 
@@ -33,9 +33,9 @@ and open the template in the editor.
 
         <%
 
-            Crud_modelo mod = new Crud_modelo();
-            Crud_contexto con = new Crud_contexto();
-            Crud_unidad unid = new Crud_unidad();
+            Insert_modelo mod = new Insert_modelo();
+            Insert_contexto con = new Insert_contexto();
+            Insert_unidad unid = new Insert_unidad();
             Conexion cone = new Conexion();
 
             List<Modelo1> modelos = mod.findAll();

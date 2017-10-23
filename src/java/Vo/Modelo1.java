@@ -7,7 +7,7 @@ package Vo;
 
 /**
  *
- * @author JCBOT
+ * @author Bogotá
  */
 public class Modelo1 {
     

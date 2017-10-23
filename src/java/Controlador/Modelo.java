@@ -6,8 +6,8 @@
 package Controlador;
 
 import Dao.Conexion;
-import Dao.Crud_contexto;
-import Dao.Crud_modelo;
+import Dao.Insert_contexto;
+import Dao.Insert_modelo;
 import Vo.Contexto1;
 import Vo.Modelo1;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author JCBOT
+ * @author Bogotá
  */
 public class Modelo extends HttpServlet {
 
@@ -61,7 +61,7 @@ public class Modelo extends HttpServlet {
             String nombre = request.getParameter("NAME");
             int id = Integer.parseInt(ID);
 
-            Crud_modelo cr = new Crud_modelo();
+            Insert_modelo cr = new Insert_modelo();
             if (crear == 1) {
                 Modelo1 tab = new Modelo1(id, nombre);
                 Conexion cox = new Conexion();

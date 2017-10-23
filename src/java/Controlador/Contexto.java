@@ -6,7 +6,7 @@
 package Controlador;
 
 import Dao.Conexion;
-import Dao.Crud_contexto;
+import Dao.Insert_contexto;
 import Vo.Contexto1;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author JCBOT
+ * @author Bogotá
  */
 public class Contexto extends HttpServlet {
 
@@ -57,7 +57,7 @@ public class Contexto extends HttpServlet {
             String nombre = request.getParameter("NAME");
             int id = Integer.parseInt(ID);
 
-            Crud_contexto cr = new Crud_contexto();
+            Insert_contexto cr = new Insert_contexto();
             if (crear == 1) {
                 Contexto1 tab = new Contexto1(id, nombre);
                 Conexion cox = new Conexion();

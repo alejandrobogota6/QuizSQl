@@ -6,8 +6,8 @@
 package Controlador;
 
 import Dao.Conexion;
-import Dao.Crud_contexto;
-import Dao.Crud_unidad;
+import Dao.Insert_contexto;
+import Dao.Insert_unidad;
 import Vo.Contexto1;
 import Vo.Unidad1;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author JCBOT
+ * @author Bogotá
  */
 public class Unidad extends HttpServlet {
 
@@ -61,7 +61,7 @@ public class Unidad extends HttpServlet {
             int id = Integer.parseInt(ID);
             int tab2 = Integer.parseInt(Tabla);
 
-            Crud_unidad cr = new Crud_unidad();
+            Insert_unidad cr = new Insert_unidad();
             if (crear == 1) {
                 Unidad1 tab = new Unidad1(id, nombre, tab2,crear);
                 Conexion cox = new Conexion();

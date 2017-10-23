@@ -19,12 +19,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body bgcolor="#ffffff" background="fondo.jpg">
+    
 
     <center>
 
         <h1>Unidad Abstracta De Informacion</h1>
-        <img src="logo.PNG" border="4"  width="220" height="190"/>  
+       
 
 
     </center>
@@ -70,9 +70,9 @@ and open the template in the editor.
                     %>
 
 
-                    <td ><input style="background-color: #ffff33" class="submit" type="submit" name="crear"  value="Crear " onClick="value = 1" > <td> 
-                    <td> <input style="background-color: #ffff33" class="submit" type="submit" name="modificar"  value="Modificar" onClick="value = 2" > <td>
-                    <td> <input style="background-color: #ffff33" class="submit" type="submit" name="eliminar"  value="Eliminar" onClick="value = 3" > <td>
+                    <td ><input style="background-color: #F9F8F8" class="submit" type="submit" name="crear"  value="Crear " onClick="value = 1" > <td> 
+                    <td> <input style="background-color: #F9F8F8" class="submit" type="submit" name="modificar"  value="Modificar" onClick="value = 2" > <td>
+                    <td> <input style="background-color: #F9F8F8" class="submit" type="submit" name="eliminar"  value="Eliminar" onClick="value = 3" > <td>
 
             </form>
             </tr>
@@ -85,8 +85,8 @@ and open the template in the editor.
 
         <table >
             <tr>
-                <td> <a href="List.jsp" ><input style="background-color: #33ffff" class="submit" type="submit" name="venta_registrada" value="Listar todo" /> </td>              
-                <td> <a href="About.jsp" ><input style="background-color: #33ffff" class="submit" type="submit" name="venta_registrada" value="About" /> </td>
+                <td> <a href="List.jsp" ><input style="background-color: #F9F8F8" class="submit" type="submit" name="venta_registrada" value="Listar todo" /> </td>              
+                
             </tr>
         </table>
 
